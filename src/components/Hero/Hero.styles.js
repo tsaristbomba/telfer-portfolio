@@ -32,7 +32,7 @@ export const HeroH1 = styled.h1`
   text-align: center;
   margin: 0 auto;
   overflow: hidden;
-  line-height: 2rem;
+  line-height: 2.5rem;
 `;
 
 export const HeroH2 = styled.h2`
