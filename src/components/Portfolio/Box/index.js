@@ -1,0 +1,51 @@
+import React from "react";
+import PropTypes from "prop-types";
+import { FaGithub, FaLink } from "react-icons/fa";
+import {
+  PortfolioBox,
+  BoxText,
+  BoxH2,
+  BoxStack,
+  BoxP,
+  BoxIcons,
+  BoxIcon,
+  BoxImage,
+  Image,
+} from "./Box.styles";
+
+const Box = ({ imgSrc, title, stack, githubLink, link }) => {
+  return (
+    <PortfolioBox data-aos="fade-up">
+      <BoxText>
+        <BoxH2>{title}</BoxH2>
+        <BoxStack>
+          {stack.map((data) => {
+            return <BoxP>{data}</BoxP>;
+          })}
+        </BoxStack>
+        <BoxIcons>
+          <BoxIcon href={githubLink} target="_blank" aria-label="Github">
+            <FaGithub />
+          </BoxIcon>
+          <BoxIcon href={link} target="_blank">
+            <FaLink />
+          </BoxIcon>
+        </BoxIcons>
+      </BoxText>
+
+      <BoxImage>
+        <Image src={imgSrc} />
+      </BoxImage>
+    </PortfolioBox>
+  );
+};
+
+Box.propTypes = {
+  imgSrc: PropTypes.string,
+  title: PropTypes.string,
+  stack: PropTypes.array,
+  githubLink: PropTypes.string,
+  link: PropTypes.string,
+};
+
+export default Box;
