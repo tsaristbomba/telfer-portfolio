@@ -1,6 +1,6 @@
 import picture from "../images/photo.jpg";
 import { MdEmail } from "react-icons/md";
-import { FaTwitter } from "react-icons/fa";
+import { FaTwitter, FaGithub } from "react-icons/fa";
 
 export const profileObj = {
   picture: picture,
@@ -24,6 +24,11 @@ export const profileObj = {
       name: "Email",
       icon: <MdEmail />,
       href: "mailto:andreitelfer@gmail.com",
+    },
+    {
+      name: "Github",
+      icon: <FaGithub />,
+      href: "https://github.com/tsaristbomba",
     },
   ],
 };
