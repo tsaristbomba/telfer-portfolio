@@ -18,8 +18,8 @@ export const boxObjTwo = {
   title: "BookFinder",
   stack: ["API", "React.js", "CSS3"],
   imgSrc: imgTwo,
-  githubLink: "https://adoring-stonebraker-741672.netlify.app/",
-  link: "https://github.com/tsaristbomba/bookfinder",
+  githubLink: "https://github.com/tsaristbomba/bookfinder",
+  link: "https://adoring-stonebraker-741672.netlify.app/",
 };
 
 export const boxObjThree = {
@@ -35,7 +35,7 @@ export const boxObjFour = {
   stack: ["React.js", "styled-components"],
   imgSrc: imgFour,
   githubLink: "https://github.com/tsaristbomba/3dcriativa-v2",
-  link: "",
+  link: "https://3dcriativa.netlify.app/",
 };
 
 export const boxObjFive = {
