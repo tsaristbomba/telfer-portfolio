@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import contactImage from "../../images/contact.jpg";
 import {
   ContactContainer,
@@ -31,8 +32,8 @@ const Contact = ({ text }) => {
               <ContactImage src={contactImage} alt="Contact me" />
             </ImageWrapper>
             <ContactText data-aos="fade-up">
-              {text.map((data) => {
-                return <ContactP>{data}</ContactP>;
+              {text.map((data, key) => {
+                return <ContactP key={key}>{data}</ContactP>;
               })}
               <ContactSocials>
                 {/* <SocialsLink>Linkedin</SocialsLink> */}
@@ -56,6 +57,10 @@ const Contact = ({ text }) => {
       </ContactWrapper>
     </ContactContainer>
   );
+};
+
+Contact.propTypes = {
+  text: PropTypes.array,
 };
 
 export default Contact;

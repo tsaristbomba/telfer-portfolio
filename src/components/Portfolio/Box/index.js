@@ -19,8 +19,8 @@ const Box = ({ imgSrc, title, stack, githubLink, link }) => {
       <BoxText>
         <BoxH2>{title}</BoxH2>
         <BoxStack>
-          {stack.map((data) => {
-            return <BoxP>{data}</BoxP>;
+          {stack.map((data, key) => {
+            return <BoxP key={key}>{data}</BoxP>;
           })}
         </BoxStack>
         <BoxIcons>

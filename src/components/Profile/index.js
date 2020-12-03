@@ -71,11 +71,11 @@ const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
                 <Title>My Skills:</Title>
               </SkillsTitle>
               <Skills>
-                {skillX.map((data) => {
-                  return <ProfileSkillX>{data}</ProfileSkillX>;
+                {skillX.map((data, key) => {
+                  return <ProfileSkillX key={key}>{data}</ProfileSkillX>;
                 })}
-                {skill.map((data) => {
-                  return <ProfileSkill>{data}</ProfileSkill>;
+                {skill.map((data, key) => {
+                  return <ProfileSkill key={key}>{data}</ProfileSkill>;
                 })}
               </Skills>
               <Socials>
@@ -84,9 +84,13 @@ const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
                 </SkillsTitle>
                 <ProfileP>{contact}</ProfileP>
                 <SocialIcons>
-                  {socials.map((data) => {
+                  {socials.map((data, key) => {
                     return (
-                      <SocialLink href={data.href} aria-label={data.name}>
+                      <SocialLink
+                        key={key}
+                        href={data.href}
+                        aria-label={data.name}
+                      >
                         {data.icon}
                       </SocialLink>
                     );
