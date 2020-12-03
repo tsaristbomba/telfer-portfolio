@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <FooterRights>ⓒ {new Date().getFullYear()} John Smith</FooterRights>
+        <FooterRights>ⓒ {new Date().getFullYear()} Andrei Telfer</FooterRights>
         <FooterMaker>
           <CodeIcon /> with React.js
         </FooterMaker>

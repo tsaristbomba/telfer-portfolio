@@ -25,7 +25,7 @@ const Navbar = ({ handleMenu }) => {
     <Nav>
       <NavbarContainer>
         <NavLogo smooth to="/#">
-          JOHN<LogoSpan>SMITH.</LogoSpan>
+          ANDREI<LogoSpan>TELFER.</LogoSpan>
         </NavLogo>
         <MobileIcon onClick={handleMenu}>
           <FaBars />

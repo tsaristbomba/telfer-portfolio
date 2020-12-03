@@ -14,7 +14,7 @@ const Hero = ({ skillX }) => {
     <HeroContainer>
       <HeroWrapper>
         <HeroContent data-aos="fade-up">
-          <HeroH1>Hello! I'm John and I work with</HeroH1>
+          <HeroH1>Hello! I'm Andrei and I work with</HeroH1>
           <HeroH2>
             <Typewriter
               options={{
