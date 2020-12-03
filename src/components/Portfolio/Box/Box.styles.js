@@ -29,6 +29,7 @@ export const BoxText = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     padding: 24px;
+    align-items: center;
   }
 `;
 export const BoxH2 = styled.h2`
@@ -50,7 +51,15 @@ export const BoxIcons = styled.div``;
 export const BoxIcon = styled.a`
   color: ${primary};
   margin-right: 2rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+  }
 `;
 export const BoxImage = styled.div`
   width: 60%;

@@ -11,6 +11,7 @@ export const PlaylistsInfoContainer = styled.div`
   justify-content: center;
   margin: 1rem 0;
   grid-gap: 1rem;
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     grid-template-areas: "col1" "col2";

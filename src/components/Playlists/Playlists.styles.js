@@ -15,6 +15,10 @@ export const PlaylistsWrapper = styled.div`
   padding: 24px;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
 `;
 export const PlaylistsTextWrapper = styled.div`
   width: 100%;
