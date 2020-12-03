@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { primary, secondary, tertiary } from "../../data/colors";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 // import { BiWinkSmile } from "react-icons/bi";
 
 export const ProfileContainer = styled.div`
@@ -84,7 +84,7 @@ export const ProfileAnchor = styled.a`
   }
 `;
 export const EmojiIcon = styled.span``;
-export const ProfileLink = styled(Link)`
+export const ProfileLink = styled(HashLink)`
   color: ${secondary};
   text-decoration: none;
   border-bottom: 2px solid ${secondary};
