@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import { primary, secondary, tertiary } from "../../data/colors";
 import { HashLink } from "react-router-hash-link";
-// import { BiWinkSmile } from "react-icons/bi";
 
 export const ProfileContainer = styled.div`
   background: ${primary};
-  height: calc(100vh - 160px);
+  min-height: calc(100vh - 160px);
   display: flex;
   justify-content: center;
 
