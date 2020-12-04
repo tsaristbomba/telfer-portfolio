@@ -10,7 +10,7 @@ import {
   PlaylistButton,
 } from "./PlaylistsInfo.styles";
 
-const PlaylistsInfo = ({ img, title, description, reverse }) => {
+const PlaylistsInfo = ({ img, title, description, reverse, href }) => {
   return (
     <PlaylistsInfoContainer
       $reverse={reverse}
@@ -22,7 +22,7 @@ const PlaylistsInfo = ({ img, title, description, reverse }) => {
       <TextWrapper $reverse={reverse} data-aos="fade-up">
         <PlaylistH2>{title}</PlaylistH2>
         <PlaylistP>{description}</PlaylistP>
-        <PlaylistButton>
+        <PlaylistButton href={href} target="_blank" rel="noopener noreferrer">
           <FaSpotify />
         </PlaylistButton>
       </TextWrapper>

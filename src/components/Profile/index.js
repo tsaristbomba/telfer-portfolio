@@ -41,6 +41,7 @@ const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
               <ProfileAnchor
                 href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/1920px-Bandeira_da_Bahia.svg.png"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 great Bahia state
               </ProfileAnchor>
@@ -91,6 +92,7 @@ const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
                         key={key}
                         href={data.href}
                         aria-label={data.name}
+                        rel="noopener noreferrer"
                       >
                         {data.icon}
                       </SocialLink>

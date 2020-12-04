@@ -24,17 +24,22 @@ const Box = ({ imgSrc, title, stack, githubLink, link }) => {
           })}
         </BoxStack>
         <BoxIcons>
-          <BoxIcon href={githubLink} target="_blank" aria-label="Github">
+          <BoxIcon
+            href={githubLink}
+            target="_blank"
+            aria-label="Github"
+            rel="noopener noreferrer"
+          >
             <FaGithub />
           </BoxIcon>
-          <BoxIcon href={link} target="_blank">
+          <BoxIcon href={link} target="_blank" rel="noopener noreferrer">
             <FaLink />
           </BoxIcon>
         </BoxIcons>
       </BoxText>
 
       <BoxImage>
-        <Image src={imgSrc} />
+        <Image src={imgSrc} alt="Project Image" />
       </BoxImage>
     </PortfolioBox>
   );

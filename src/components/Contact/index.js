@@ -36,8 +36,12 @@ const Contact = ({ text }) => {
                 return <ContactP key={key}>{data}</ContactP>;
               })}
               <ContactSocials>
-                {/* <SocialsLink>Linkedin</SocialsLink> */}
-                <SocialsLink href="" target="_blank" aria-label="Twitter">
+                <SocialsLink
+                  href="https://twitter.com/andreitelfer"
+                  target="_blank"
+                  aria-label="Twitter"
+                  rel="noopener noreferrer"
+                >
                   <SocialsText>
                     DM me <TwitterIcon />
                   </SocialsText>
