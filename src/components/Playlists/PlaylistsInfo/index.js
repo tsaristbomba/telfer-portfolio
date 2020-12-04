@@ -22,7 +22,12 @@ const PlaylistsInfo = ({ img, title, description, reverse, href }) => {
       <TextWrapper $reverse={reverse} data-aos="fade-up">
         <PlaylistH2>{title}</PlaylistH2>
         <PlaylistP>{description}</PlaylistP>
-        <PlaylistButton href={href} target="_blank" rel="noopener noreferrer">
+        <PlaylistButton
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Spotify"
+        >
           <FaSpotify />
         </PlaylistButton>
       </TextWrapper>

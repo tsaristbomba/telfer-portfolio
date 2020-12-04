@@ -32,7 +32,12 @@ const Box = ({ imgSrc, title, stack, githubLink, link }) => {
           >
             <FaGithub />
           </BoxIcon>
-          <BoxIcon href={link} target="_blank" rel="noopener noreferrer">
+          <BoxIcon
+            href={link}
+            target="_blank"
+            aria-label="App Link"
+            rel="noopener noreferrer"
+          >
             <FaLink />
           </BoxIcon>
         </BoxIcons>
