@@ -30,7 +30,7 @@ const Contact = ({ text }) => {
           </Title>
           <ContactRow>
             <ImageWrapper data-aos="fade-right">
-              <LazyLoad once>
+              <LazyLoad once height="auto">
                 <ContactImage src={contactImage} alt="Contact me" />
               </LazyLoad>
             </ImageWrapper>

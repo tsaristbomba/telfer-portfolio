@@ -1,5 +1,6 @@
 import React from "react";
 import { FaSpotify } from "react-icons/fa";
+import LazyLoad from "react-lazyload";
 import {
   PlaylistsInfoContainer,
   ImageWrapper,
@@ -17,7 +18,9 @@ const PlaylistsInfo = ({ img, title, description, reverse, href }) => {
       //data-aos="fade-up"
     >
       <ImageWrapper data-aos={`fade-${reverse ? "left" : "right"}`}>
-        <Image src={img} />
+        <LazyLoad once>
+          <Image src={img} alt="Spotify playlist" />
+        </LazyLoad>
       </ImageWrapper>
       <TextWrapper $reverse={reverse} data-aos="fade-up">
         <PlaylistH2>{title}</PlaylistH2>
