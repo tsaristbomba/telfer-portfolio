@@ -15,38 +15,40 @@ import {
 
 const Box = ({ imgSrc, title, stack, githubLink, link }) => {
   return (
-    <PortfolioBox data-aos="fade-up">
-      <BoxText>
-        <BoxH2>{title}</BoxH2>
-        <BoxStack>
-          {stack.map((data, key) => {
-            return <BoxP key={key}>{data}</BoxP>;
-          })}
-        </BoxStack>
-        <BoxIcons>
-          <BoxIcon
-            href={githubLink}
-            target="_blank"
-            aria-label="Github"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
-          </BoxIcon>
-          <BoxIcon
-            href={link}
-            target="_blank"
-            aria-label="App Link"
-            rel="noopener noreferrer"
-          >
-            <FaLink />
-          </BoxIcon>
-        </BoxIcons>
-      </BoxText>
+    <>
+      <PortfolioBox data-aos="fade-up">
+        <BoxText>
+          <BoxH2>{title}</BoxH2>
+          <BoxStack>
+            {stack.map((data, key) => {
+              return <BoxP key={key}>{data}</BoxP>;
+            })}
+          </BoxStack>
+          <BoxIcons>
+            <BoxIcon
+              href={githubLink}
+              target="_blank"
+              aria-label="Github"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </BoxIcon>
+            <BoxIcon
+              href={link}
+              target="_blank"
+              aria-label="App Link"
+              rel="noopener noreferrer"
+            >
+              <FaLink />
+            </BoxIcon>
+          </BoxIcons>
+        </BoxText>
 
-      <BoxImage>
-        <Image src={imgSrc} alt="Project Image" />
-      </BoxImage>
-    </PortfolioBox>
+        <BoxImage>
+          <Image src={imgSrc} alt="Project Image" />
+        </BoxImage>
+      </PortfolioBox>
+    </>
   );
 };
 

@@ -23,12 +23,12 @@ const Portfolio = () => {
         <PortfolioTitle>
           <Title>Selected Work.</Title>
         </PortfolioTitle>
-        <Box {...boxObjOne} />
         <Box {...boxObjFour} />
         <Box {...boxObjTwo} />
         <Box {...boxObjThree} />
         <Box {...boxObjFive} />
         <Box {...boxObjSix} />
+        <Box {...boxObjOne} />
         <Box {...boxObjSeven} />
       </PortfolioWrapper>
     </PortfolioContainer>
