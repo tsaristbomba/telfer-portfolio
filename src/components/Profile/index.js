@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import LazyLoad from "react-lazyload";
 import {
   ProfileContainer,
   ProfileWrapper,
@@ -32,7 +33,9 @@ const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
         </ProfileTitle>
         <ProfileContent>
           <ProfilePicture data-aos="fade-right">
-            <Picture src={picture} alt={alt} />
+            <LazyLoad once height="auto">
+              <Picture src={picture} alt={alt} />
+            </LazyLoad>
           </ProfilePicture>
           <ProfileText data-aos="fade-up">
             <ProfileP>

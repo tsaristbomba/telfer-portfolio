@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaGithub, FaLink } from "react-icons/fa";
+import LazyLoad from "react-lazyload";
 import {
   PortfolioBox,
   BoxText,
@@ -45,7 +46,9 @@ const Box = ({ imgSrc, title, stack, githubLink, link }) => {
         </BoxText>
 
         <BoxImage>
-          <Image src={imgSrc} alt="Project Image" />
+          <LazyLoad once offset={100} height="auto">
+            <Image src={imgSrc} alt="Project Image" />
+          </LazyLoad>
         </BoxImage>
       </PortfolioBox>
     </>

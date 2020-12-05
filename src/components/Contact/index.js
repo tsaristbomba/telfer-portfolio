@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import LazyLoad from "react-lazyload";
 import contactImage from "../../images/contact.jpg";
 import {
   ContactContainer,
@@ -29,7 +30,9 @@ const Contact = ({ text }) => {
           </Title>
           <ContactRow>
             <ImageWrapper data-aos="fade-right">
-              <ContactImage src={contactImage} alt="Contact me" />
+              <LazyLoad once>
+                <ContactImage src={contactImage} alt="Contact me" />
+              </LazyLoad>
             </ImageWrapper>
             <ContactText data-aos="fade-up">
               {text.map((data, key) => {
