@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import LazyLoad from "react-lazyload";
 import {
   ProfileContainer,
   ProfileWrapper,
@@ -8,6 +7,7 @@ import {
   Title,
   ProfilePicture,
   Picture,
+  PicturePlaceholder,
   ProfileText,
   ProfileP,
   ProfileAnchor,
@@ -25,6 +25,8 @@ import {
 } from "./Profile.styles";
 
 const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   return (
     <ProfileContainer id="about">
       <ProfileWrapper>
@@ -33,9 +35,12 @@ const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
         </ProfileTitle>
         <ProfileContent>
           <ProfilePicture data-aos="fade-right">
-            <LazyLoad once height="auto">
-              <Picture src={picture} alt={alt} />
-            </LazyLoad>
+            <Picture
+              onLoad={() => setImgLoaded(true)}
+              src={picture}
+              alt={alt}
+            />
+            {!imgLoaded && <PicturePlaceholder />}
           </ProfilePicture>
           <ProfileText data-aos="fade-up">
             <ProfileP>

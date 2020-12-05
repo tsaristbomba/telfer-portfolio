@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import LazyLoad from "react-lazyload";
 import contactImage from "../../images/contact.jpg";
 import {
   ContactContainer,
@@ -17,10 +16,13 @@ import {
   SocialsText,
   ImageWrapper,
   ContactImage,
+  ImagePlaceholder,
   ContactRow,
 } from "./Contact.styles";
 
 const Contact = ({ text }) => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   return (
     <ContactContainer id="contact">
       <ContactWrapper>
@@ -30,9 +32,12 @@ const Contact = ({ text }) => {
           </Title>
           <ContactRow>
             <ImageWrapper data-aos="fade-right">
-              <LazyLoad once height="auto">
-                <ContactImage src={contactImage} alt="Contact me" />
-              </LazyLoad>
+              <ContactImage
+                onLoad={() => setImgLoaded(true)}
+                src={contactImage}
+                alt="Contact me"
+              />
+              {!imgLoaded && <ImagePlaceholder />}
             </ImageWrapper>
             <ContactText data-aos="fade-up">
               {text.map((data, key) => {

@@ -11,7 +11,6 @@ export const PlaylistsInfoContainer = styled.div`
   justify-content: center;
   margin: 1rem 0;
   grid-gap: 1rem;
-  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     grid-template-areas: "col1" "col2";
@@ -21,13 +20,24 @@ export const PlaylistsInfoContainer = styled.div`
 `;
 export const ImageWrapper = styled.div`
   grid-area: col1;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 `;
 export const Image = styled.img`
   width: 100%;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+`;
+export const ImagePlaceholder = styled.div`
+  width: 100%;
+  height: 100%;
+  background: ${tertiary};
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `;
 export const TextWrapper = styled.div`
   grid-area: col2;

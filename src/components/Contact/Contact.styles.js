@@ -53,13 +53,25 @@ export const ContactRow = styled.div`
 `;
 export const ImageWrapper = styled.div`
   grid-area: col1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
 `;
 export const ContactImage = styled.img`
   width: 100%;
+  height: 100%;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+`;
+export const ImagePlaceholder = styled.div`
+  width: 100%;
+  height: 100%;
+  background: ${tertiary};
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `;
 export const ContactText = styled.div`
   grid-area: col2;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { primary, secondary } from "../../../data/colors";
+import { primary, secondary, tertiary } from "../../../data/colors";
 
 export const PortfolioBox = styled.div`
   background: ${secondary};
@@ -75,6 +75,17 @@ export const BoxImage = styled.div`
 `;
 export const Image = styled.img`
   width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  @media screen and (max-width: 768px) {
+    box-shadow: none;
+    border-radius: 0 0 8px 8px;
+  }
+`;
+export const ImagePlaceholder = styled.div`
+  width: 100%;
+  background: ${tertiary};
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 

@@ -44,7 +44,10 @@ export const ProfileContent = styled.div`
 `;
 export const ProfilePicture = styled.div`
   width: 40%;
-  padding: 1rem 1rem 0 0;
+  margin: 1rem 1rem 0 0;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -55,9 +58,17 @@ export const ProfilePicture = styled.div`
 export const Picture = styled.img`
   width: 100%;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+`;
+export const PicturePlaceholder = styled.div`
+  width: 100%;
+  height: 100%;
+  background: ${tertiary};
+  position: absolute;
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `;
 export const ProfileText = styled.div`
   width: 60%;
