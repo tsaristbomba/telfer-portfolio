@@ -23,9 +23,14 @@ export const ImageWrapper = styled.div`
   grid-area: col1;
   width: 100%;
   height: 100%;
+  min-height: 300px;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    min-height: 200px;
+  }
 `;
 export const Image = styled.img`
   width: 100%;

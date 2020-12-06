@@ -51,7 +51,7 @@ export const ProfilePicture = styled.div`
   overflow: hidden;
 
   @media screen and (max-width: 480px) {
-    height: 480px;
+    min-height: 480px;
   }
 
   @media screen and (max-width: 768px) {

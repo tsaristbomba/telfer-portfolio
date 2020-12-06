@@ -11,6 +11,7 @@ export const ContactContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     height: auto;
+    min-height: 100vh;
   }
 `;
 export const ContactWrapper = styled.div`
@@ -59,6 +60,10 @@ export const ImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+
+  @media screen and (max-width: 768px) {
+    min-height: 250px;
+  }
 `;
 export const ContactImage = styled.img`
   width: 100%;
