@@ -4,6 +4,8 @@ import { secondary, tertiary } from "../../../data/colors";
 export const PlaylistsInfoContainer = styled.div`
   display: grid;
   max-width: 1100px;
+  width: 100%;
+  min-height: 280px;
   grid-auto-columns: minmax(49%, 1fr);
   grid-template-areas: ${({ $reverse }) =>
     $reverse ? "'col2 col1'" : "'col1 col2'"};
@@ -20,9 +22,15 @@ export const PlaylistsInfoContainer = styled.div`
 `;
 export const ImageWrapper = styled.div`
   grid-area: col1;
+  width: 100%;
+  height: 100%;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+  }
 `;
 export const Image = styled.img`
   width: 100%;

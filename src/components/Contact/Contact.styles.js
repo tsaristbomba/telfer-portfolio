@@ -16,6 +16,7 @@ export const ContactContainer = styled.div`
 export const ContactWrapper = styled.div`
   padding: 24px;
   max-width: 1100px;
+  min-height: 305px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +42,7 @@ export const ContactH2 = styled.h2`
 `;
 export const ContactRow = styled.div`
   display: grid;
+  min-height: 305px;
   grid-auto-columns: minmax(50%, 1fr);
   grid-template-areas: "col1 col2";
   align-items: center;
@@ -53,18 +55,18 @@ export const ContactRow = styled.div`
 `;
 export const ImageWrapper = styled.div`
   grid-area: col1;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
 `;
 export const ContactImage = styled.img`
   width: 100%;
-  height: 100%;
   border-radius: 8px;
 `;
 export const ImagePlaceholder = styled.div`
   width: 100%;
-  height: 100%;
   background: ${tertiary};
   border-radius: 8px;
   position: absolute;

@@ -44,10 +44,15 @@ export const ProfileContent = styled.div`
 `;
 export const ProfilePicture = styled.div`
   width: 40%;
+  height: 100%;
   margin: 1rem 1rem 0 0;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    height: 480px;
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -61,7 +66,6 @@ export const Picture = styled.img`
 `;
 export const PicturePlaceholder = styled.div`
   width: 100%;
-  height: 100%;
   background: ${tertiary};
   position: absolute;
   border-radius: 8px;

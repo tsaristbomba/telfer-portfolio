@@ -23,7 +23,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 
   @media screen and (max-width: 768px) {
-    padding-left: 48px;
+    padding-left: 24px;
     padding-right: 24px;
   }
   @media screen and (max-width: 480px) {
