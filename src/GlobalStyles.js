@@ -21,8 +21,8 @@ const spin = keyframes`
 
 export const Spinner = styled(ImSpinner2)`
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 45%;
   color: ${tertiary};
   font-size: 2rem;
   animation: ${spin} 2s linear infinite;
