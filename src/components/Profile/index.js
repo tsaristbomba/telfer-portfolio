@@ -45,13 +45,13 @@ const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
           <ProfileText data-aos="fade-up">
             <ProfileP>
               I was born and grew up in Brazil, in a small town at the exact
-              center of the{" "}
+              center of{" "}
               <ProfileAnchor
                 href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/1920px-Bandeira_da_Bahia.svg.png"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                great Bahia state
+                the great state of Bahia
               </ProfileAnchor>
               <EmojiIcon> 😁</EmojiIcon>. My experience with computers started
               when my parents, both high school teachers, needed a computer to
