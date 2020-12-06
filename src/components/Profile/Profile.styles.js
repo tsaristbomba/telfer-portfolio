@@ -66,7 +66,7 @@ export const Picture = styled.img`
 `;
 export const PicturePlaceholder = styled.div`
   width: 100%;
-  background: ${tertiary};
+  background: transparent;
   position: absolute;
   border-radius: 8px;
   top: 0;

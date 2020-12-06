@@ -1,4 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, keyframes } from "styled-components";
+import { ImSpinner2 } from "react-icons/im";
+import { tertiary } from "./data/colors";
 
 const GlobalStyles = createGlobalStyle`
     * {
@@ -8,6 +10,22 @@ const GlobalStyles = createGlobalStyle`
         font-family: "Inter", sans-serif;
         line-height: 1.5rem;
     }
+`;
+
+const spin = keyframes`
+    100% {
+        transform: rotate(360deg);
+    }
+    
+`;
+
+export const Spinner = styled(ImSpinner2)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: ${tertiary};
+  font-size: 2rem;
+  animation: ${spin} 2s linear infinite;
 `;
 
 export default GlobalStyles;

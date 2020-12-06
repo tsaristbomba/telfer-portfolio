@@ -16,7 +16,6 @@ export const ContactContainer = styled.div`
 export const ContactWrapper = styled.div`
   padding: 24px;
   max-width: 1100px;
-  min-height: 305px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +66,7 @@ export const ContactImage = styled.img`
 `;
 export const ImagePlaceholder = styled.div`
   width: 100%;
-  background: ${tertiary};
+  background: transparent;
   border-radius: 8px;
   position: absolute;
   top: 0;

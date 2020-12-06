@@ -23,6 +23,7 @@ import {
   SocialIcons,
   SocialLink,
 } from "./Profile.styles";
+import { Spinner } from "../../GlobalStyles";
 
 const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -40,7 +41,11 @@ const Profile = ({ picture, alt, skillX, skill, socials, contact }) => {
               src={picture}
               alt={alt}
             />
-            {!imgLoaded && <PicturePlaceholder />}
+            {!imgLoaded && (
+              <PicturePlaceholder>
+                <Spinner />
+              </PicturePlaceholder>
+            )}
           </ProfilePicture>
           <ProfileText data-aos="fade-up">
             <ProfileP>

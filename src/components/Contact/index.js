@@ -19,6 +19,7 @@ import {
   ImagePlaceholder,
   ContactRow,
 } from "./Contact.styles";
+import { Spinner } from "../../GlobalStyles";
 
 const Contact = ({ text }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -37,7 +38,11 @@ const Contact = ({ text }) => {
                 src={contactImage}
                 alt="Contact me"
               />
-              {!imgLoaded && <ImagePlaceholder />}
+              {!imgLoaded && (
+                <ImagePlaceholder>
+                  <Spinner />
+                </ImagePlaceholder>
+              )}
             </ImageWrapper>
             <ContactText data-aos="fade-up">
               {text.map((data, key) => {

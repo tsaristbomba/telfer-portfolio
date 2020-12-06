@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaSpotify } from "react-icons/fa";
+import { Spinner } from "../../../GlobalStyles";
 import {
   PlaylistsInfoContainer,
   ImageWrapper,
@@ -25,7 +26,11 @@ const PlaylistsInfo = ({ img, title, description, reverse, href }) => {
           src={img}
           alt="Spotify playlist"
         />
-        {!imgLoaded && <ImagePlaceholder />}
+        {!imgLoaded && (
+          <ImagePlaceholder>
+            <Spinner />
+          </ImagePlaceholder>
+        )}
       </ImageWrapper>
       <TextWrapper $reverse={reverse} data-aos="fade-up">
         <PlaylistH2>{title}</PlaylistH2>

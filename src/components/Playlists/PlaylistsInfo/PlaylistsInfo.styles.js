@@ -5,7 +5,6 @@ export const PlaylistsInfoContainer = styled.div`
   display: grid;
   max-width: 1100px;
   width: 100%;
-  min-height: 280px;
   grid-auto-columns: minmax(49%, 1fr);
   grid-template-areas: ${({ $reverse }) =>
     $reverse ? "'col2 col1'" : "'col1 col2'"};
@@ -24,12 +23,17 @@ export const ImageWrapper = styled.div`
   grid-area: col1;
   width: 100%;
   height: 100%;
+  min-height: 388px;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
 
   @media screen and (max-width: 480px) {
-    height: 100%;
+    min-height: 245px;
+  }
+
+  @media screen and (max-width: 768px) {
+    min-height: 540px;
   }
 `;
 export const Image = styled.img`
@@ -39,7 +43,7 @@ export const Image = styled.img`
 export const ImagePlaceholder = styled.div`
   width: 100%;
   height: 100%;
-  background: ${tertiary};
+  background: transparent;
   border-radius: 8px;
   position: absolute;
   top: 0;
