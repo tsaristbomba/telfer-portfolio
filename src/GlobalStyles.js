@@ -7,8 +7,12 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: "Inter", sans-serif;
+        font-family: "Inter", "Nunito", sans-serif;
         line-height: 1.5rem;
+    }
+
+    p, button, a {
+        font-family: "Nunito", "Inter", sans-serif
     }
 `;
 
