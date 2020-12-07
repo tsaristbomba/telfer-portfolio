@@ -9,23 +9,25 @@ import {
   HeroH2,
 } from "./Hero.styles";
 
-const Hero = ({ skillX }) => {
+const Hero = () => {
   return (
     <HeroContainer>
       <HeroWrapper>
         <HeroContent data-aos="fade-up">
-          <HeroH1>Andrei is a Freelance Web Developer who likes:</HeroH1>
+          <HeroH1>Hi, I'm Andrei, a </HeroH1>
           <HeroH2>
             <Typewriter
               options={{
-                strings: skillX,
+                strings: ["React.js"],
                 autoStart: true,
+                pauseFor: 15000000,
                 loop: true,
                 delay: 50,
                 deleteSpeed: 35,
               }}
             />
           </HeroH2>
+          <HeroH1>Developer.</HeroH1>
         </HeroContent>
       </HeroWrapper>
     </HeroContainer>

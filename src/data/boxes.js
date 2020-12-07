@@ -8,7 +8,7 @@ import imgSeven from "../images/datamkt.JPG";
 
 export const boxObjOne = {
   title: "Weather App",
-  stack: ["API", "React.js", "Material-UI"],
+  stack: ["React.js", "API", "Material-UI"],
   imgSrc: imgOne,
   githubLink: "https://github.com/tsaristbomba/weather-app",
   link: "https://weather-app-11969.web.app/",
@@ -16,7 +16,7 @@ export const boxObjOne = {
 
 export const boxObjTwo = {
   title: "BookFinder",
-  stack: ["API", "React.js", "CSS3"],
+  stack: ["React.js", "API", "CSS3"],
   imgSrc: imgTwo,
   githubLink: "https://github.com/tsaristbomba/bookfinder",
   link: "https://adoring-stonebraker-741672.netlify.app/",
@@ -24,7 +24,7 @@ export const boxObjTwo = {
 
 export const boxObjThree = {
   title: "Gif City",
-  stack: ["API", "React.js", "Bootstrap"],
+  stack: ["React.js", "API", "Bootstrap"],
   imgSrc: imgThree,
   githubLink: "https://github.com/tsaristbomba/gif-city",
   link: "https://tsaristbomba.github.io/gif-city/",
@@ -40,7 +40,7 @@ export const boxObjFour = {
 
 export const boxObjFive = {
   title: "Memory game",
-  stack: ["API", "React.js", "CSS3"],
+  stack: ["React.js", "API", "CSS3"],
   imgSrc: imgFive,
   githubLink: "https://github.com/tsaristbomba/memory-game",
   link: "https://anime-memory-game.netlify.app/",
